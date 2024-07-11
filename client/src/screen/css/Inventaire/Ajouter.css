@@ -1,0 +1,244 @@
+.page .titre-texte {
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #11111150;
+    margin: 0;
+}
+
+.page .titre {
+    font-family: IBM Plex Sans;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #11111125;
+    padding-bottom: 20px;
+}
+
+.page .titre p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.page .titre span {
+    color: #11111170;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.page .block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.page .block .gauche {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    position: sticky;
+    overflow-y: auto;
+    height: 60vh;
+    scrollbar-width: none;
+}
+
+
+.page .block .gauche::-webkit-scrollbar {
+    display: none;
+}
+
+.page .block .gauche .type {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.page .block .gauche .type p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page .block .gauche .type div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.page .block .gauche .type div .produit {
+    padding: 10px 15px;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.page .block .gauche .type div .service {
+    padding: 10px 15px;
+    border: 1px solid #11111150;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.page .block .gauche .type div .service:hover {
+    border: 1px solid #11111100;
+    background-color: #11111193;
+    color: #fff;
+}
+
+.page .block .gauche .nom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.page .block .gauche .nom .un {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.page .block .gauche .nom .un label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page .block .gauche .nom .un input {
+    padding: 16px 0 16px 16px;
+    border: 1px solid #11111130;
+    border-radius: 16px;
+    width: 100%;
+}
+
+.page .block .gauche .nom .deux {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.page .block .gauche .nom .deux label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page .block .gauche .nom .deux select {
+    padding: 16px;
+    border: 1px solid #11111130;
+    border-radius: 16px;
+    color: #11111190;
+    width: 100%;
+}
+
+.page .block .gauche .nom .deux select option {
+    padding: 16px;
+}
+
+.page .block .gauche .Description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.page .block .gauche .Description label {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page .block .gauche .Description textarea {
+    padding: 16px;
+    border: 1px solid #11111130;
+    border-radius: 16px;
+
+    
+    min-width: 600px;
+    min-height: 100px;
+    height: fit-content;
+    max-width: 600px;
+    max-height: 150px;
+}
+
+.page .block .droite {
+    width: 30%;
+
+    height: 60vh;
+}   
+
+.page .block .droite .image,
+.page .block .droite .Fiche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page .block .droite .image p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.page .block .droite .image input {}
+
+.page .block .droite .Fiche p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.page .block .droite .Fiche input {}
+
+.page .save>div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.page .save .enregistrer {
+    padding: 10px 15px;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.page .save .annuler {
+    color: #929292;
+    cursor: pointer;
+}
+
+.page .save .annuler:hover,
+.page .save .enregistrer:hover {
+    font-weight: 500;
+}
+
+.img-selection {
+    background-color: #fff;
+    border: 3px dashed #11111110;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 16px;
+    align-items: center;
+}
+
+.img-selection:hover {
+    border: 3px dashed #11111150;
+
+}

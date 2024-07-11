@@ -1,0 +1,1313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    taille_texte: 10px
+}
+
+.app {
+    background-color: #111111;
+    min-height: 100vh;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 96px 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+.left-side {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.top-side {
+    grid-area: 1 / 4 / 2 / 13;
+}
+
+.page {
+    grid-area: 2 / 4 / 3 / 13;
+    background-color: #fff;
+    margin: -16px 0 0 -16px;
+    border-radius: 32px 0 0 0;
+}
+
+.page-content {
+    grid-area: 2 / 4 / 3 / 10;
+    padding: 14px;
+
+    position: sticky;
+    overflow-y: auto;
+    min-height: 80vh;
+    height: 70vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-side {
+    grid-area: 2 / 10 / 3 / 13;
+}
+
+.app ::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    scrollbar-width: none;
+}
+
+.header {
+    padding: 32px 32px 0 32px;
+}
+
+.left-side .autre {
+    /* width: 25%;
+    display: flex;
+    flex-direction: column; */
+
+    position: sticky;
+    overflow-y: auto;
+    min-height: 10vh;
+    height: 70vh;
+    max-height: 100vh;
+
+}
+
+
+.left-side .autre::-webkit-scrollbar {
+    display: none;
+}
+
+
+.left-side .autre {
+    scrollbar-width: none;
+}
+
+.page-content .autre::-webkit-scrollbar {
+    display: none;
+}
+
+
+.page-content .autre {
+    scrollbar-width: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.logo-text {
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+}
+
+.offre-bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0px;
+}
+
+.offre {
+    font-size: 12px;
+    padding: 16px;
+    background: #FFFFFF1F;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offre .un {
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #fff;
+}
+
+.offre .deux {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFFB8;
+}
+
+.offre-texte {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF8F;
+
+}
+
+.autre {
+    background: #EDECFE;
+    height: fit-content;
+    padding: 24px;
+}
+
+
+.corps span {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.2px;
+    text-align: left;
+    color: #11111152;
+    margin-bottom: 12px;
+}
+
+.corps .bloc1 {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.corps .bloc1 .menu div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.corps .bloc1 .menu:hover {
+    background: #11111108;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.corps .bloc1 .menu p:hover{
+    font-weight: 700;
+}
+
+.corps .bloc1 .menu p {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111B8;
+    margin: 0;
+    text-decoration: none;
+}
+
+.Link-style {
+    text-decoration: none;
+}
+
+.visible {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    margin-left: 40px;
+}
+.visible .Link-style{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111B8;
+    margin: 0;
+    text-decoration: none;
+}
+.visible .Link-style:hover{
+    font-weight: 700;
+}
+
+.corps .bloc1 .Actif {
+    background: #11111114;
+    border-radius: 12px;
+}
+
+.corps .bloc1 .Actif p {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.corps .bloc1 .Actif .Actif-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px;
+    gap: 10px;
+}
+
+.footer {
+    border: 2px solid #11111114;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+
+.footer .top {
+    padding: 16px;
+}
+
+.footer .top .share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .top .share span {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.footer .top .share img {
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #11111114;
+}
+
+.footer .top .lien {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid #11111129;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 8px;
+}
+
+.footer .top .lien div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.footer .top .lien .copier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    background-color: #D3F2D8;
+    border-radius: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.footer .top .lien .copier span {
+    color: #24BD3D;
+}
+
+hr {
+    height: 1px;
+    color: transparent;
+    border: 1px solid #11111114;
+}
+
+.footer .bottom {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .bottom div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+.footer .bottom div div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer .bottom div div span {
+    font-family: IBM Plex Sans;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 8.8px;
+    text-align: left;
+}
+
+.footer .bottom div div p {
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    line-height: 13.2px;
+    text-align: left;
+
+    font-size: 10px;
+    margin: 0;
+}
+
+.footer .bottom img {
+    padding: 8px;
+    background: #D3F2D8;
+    border: 1px solid #11111114;
+    border-radius: 14px;
+}
+
+.footer .bottom .deux img {
+    padding: 8px;
+    background: #11111114;
+    border: 1px solid #11111114;
+    border-radius: 14px;
+}
+
+.droite {
+    width: 80%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.app .top-side {
+    padding: 32px 24px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .top-side div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.app .top-side span {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.app .top-side div .search input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    width: 20vw;
+}
+
+.app .top-side div .search {
+    border: 1px solid #FFFFFF14;
+    background: #FFFFFF1F;
+    padding: 12px;
+    border-radius: 24px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.app .top-side div .search img {
+    cursor: pointer;
+}
+
+.app .top-side div div .notification {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    border-radius: 32px;
+    background: #FFFFFF3D;
+    cursor: pointer;
+}
+
+
+.app .top-side div div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.droite .corps {
+    background: #FFFFFF;
+    padding: 32px 24px;
+    border-radius: 32px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* .app .page-content {
+    /* width: 65%;
+} */
+
+.app .page-content .haut {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app .page-content .haut span {
+    font-family: Bricolage Grotesque;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.app .page-content .haut .block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .page-content .haut div .haut-Component {
+
+    padding: 32px;
+    border-radius: 24px;
+    background: #1111110A;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app .page-content .haut div .haut-Component .titre {
+    font-family: Bricolage Grotesque;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .haut div .haut-Component .nombre {
+    font-family: 'IBM Plex Sans';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .haut div .haut-Component .total {
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    margin: 0;
+}
+
+.app .page-content .haut div .haut-Component div {
+    padding: 8px;
+    width: fit-content;
+    gap: 4px;
+    border-radius: 12px;
+    background: #D3F2D8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app .page-content .haut div .haut-Component div img {
+    width: 12px;
+    height: 12px;
+}
+
+
+.app .page-content .haut div .haut-Component div span {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #24BD3D;
+    margin: 0;
+}
+
+.app .page-content .milieu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app .page-content .milieu .titre {
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.app .page-content .milieu .block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.app .page-content .milieu .block .actif {
+    width: 48%;
+}
+
+.app .page-content .milieu .block .passif {
+    width: 48%;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre {
+    display: flex;
+    flex-direction: column;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre span {
+    color: #111111;
+    font-family: Bricolage Grotesque;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .titre img {
+    width: 16px;
+    height: 16px;
+}
+
+
+.app .page-content .milieu .block .actif .actif_Titre .prix_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre p {
+    color: #1111118F;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .evolution {
+    padding: 8px;
+    width: fit-content;
+    gap: 4px;
+    border-radius: 12px;
+    background: #D3F2D8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .prix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .prix span {
+    font-family: IBM Plex sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+
+    margin: 0;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .prix p {
+    color: #111111;
+    font-family: IBM Plex sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    margin: 0;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .evolution span {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #24BD3D;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .liste-deroulante {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #1111110A;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .liste-deroulante p {
+    margin: 0;
+}
+
+.app .page-content .milieu .block .actif {
+    padding: 32px 24px;
+    gap: 24px;
+    border-radius: 24px;
+    background: #1111110A;
+    box-shadow: none;
+}
+
+.app .page-content .milieu .block .actif:hover,
+.app .page-content .milieu .block .facture:hover,
+.app .page-content .milieu .block .activite:hover {
+    background: #FFFFFF99;
+    box-shadow: 0px 4px 10px 0px #00000014;
+    transition: ease-in-out 0.3s;
+}
+
+.app .page-content .milieu .block .passif {
+    background: #1111110A;
+    padding: 32px 24px;
+    gap: 24px;
+    border-radius: 24px;
+}
+
+.app .page-content .milieu .block .actif .actif_Titre .evolution .prix_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.app .page-content .milieu .block .passif .actif_Titre .evolution {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.app .page-content .milieu .block .passif .actif_Titre .evolution p {
+    color: #EDA145;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .passif .actif_Titre .evolution .prix-evolution {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.app .page-content .milieu .block .passif .actif_Titre .evolution .prix-evolution p {
+    font-family: IBM Plex sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .passif .actif_Titre .evolution .prix-evolution span {
+    color: #111111;
+    font-family: IBM Plex sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.app .page-content .milieu .block .facture {
+    padding: 32px 24px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #1111110A;
+    width: 48%;
+    gap: 10px;
+
+    height: fit-content;
+}
+
+.app .page-content .milieu .block .facture .Block_titre p {
+    color: #111111;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .facture .Block_titre span {
+    color: #1111118F;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.app .page-content .milieu .block .facture .facture-all {
+    background: #111111;
+    padding: 12px;
+    gap: 0px;
+    border-radius: 16px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app .page-content .milieu .block .facture .facture-all p {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .facture .facture-all span {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #FFFFFFB8;
+
+}
+
+.app .page-content .milieu .block .facture .progression {
+    display: flex;
+    flex-direction: column;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .non-payeee p {
+    color: #EDA145;
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .non-payeee .prix {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .non-payeee .prix p {
+    font-family: IBM Plex sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .non-payeee .prix span {
+    font-family: IBM Plex sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .retard p {
+    color: #E4626F;
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .retard .prix {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .retard .prix p {
+    font-family: IBM Plex sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.app .page-content .milieu .block .facture .progression .texte-progression .retard .prix span {
+    font-family: IBM Plex sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .facture .progression .barre-progression {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    border-radius: 32px;
+    background: #FFFFFF3D;
+    align-items: center;
+}
+
+.app .page-content .milieu .block .activite {
+    padding: 32px 24px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #1111110A;
+    width: 48%;
+    gap: 10px;
+}
+
+.app .page-content .milieu .block .activite p {
+    color: #111111;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+
+.app .page-content .milieu .block .activite .serveuse {
+    background: #ffffff8c;
+    padding: 8px;
+    gap: 0px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app .page-content .milieu .block .activite .serveuse .liste {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.app .page-content .milieu .block .activite .serveuse .liste p {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .activite .serveuse .liste span {
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #11111194;
+}
+
+.app .page-content .milieu .block .activite .revenue {
+    background: #1111110A;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.app .page-content .milieu .block .activite .revenue p {
+    color: #111111CC;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin: 0;
+
+}
+
+.app .page-content .milieu .block .activite .graphe {
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    background: #FFFFFF52;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 20px;
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0 0 0;
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin .barre .valuer {
+
+    position: absolute;
+    top: -20px;
+    left: -16px;
+    /* width: 4px;
+    height: 4px; */
+    border: 1px solid #11111114;
+    background: #FFFFFF;
+
+    color: #111111;
+    border-radius: 20px;
+    padding: 1px;
+
+
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin .barre {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* padding: 14px; */
+    border-radius: 32px;
+    background: #FFFFFF3D;
+    align-items: center;
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin .ligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10px;
+    gap: 7px;
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin .ligne p {
+    color: #111111;
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 11px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+}
+
+.app .page-content .milieu .block .activite .graphe .graphe-dessin .ligne span {
+    font-family: IBM Plex Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111A3;
+    margin: 0;
+}
+
+.app .page-content .milieu .block .activite .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #FFFFFF52;
+
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.app .page-content .milieu .block .activite .total p {
+    color: #111111CC;
+
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-align: left;
+}
+
+.app .page-content .milieu .block .activite .total span {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    color: #111111;
+    margin: 0;
+}
+
+.app .right-side {
+    /* width: 35%; */
+    background: #1111110A;
+    padding: 20px 24px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px; */
+    margin-top: 13%;
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.app .right-side .Facture_Titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.app .right-side .Facture_Titre img {
+    width: 16px;
+    height: 16px;
+}
+
+.app .right-side .Facture_Titre span {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .right-side .date {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    margin: 0;
+}
+
+.app .right-side hr {
+    height: 1px;
+    color: #11111111;
+    margin-top: 10px;
+}
+
+.app .right-side .Facture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #11111111;
+    padding: 10px 0;
+}
+
+.app .right-side .Facture .Titre {
+    display: flex;
+    flex-direction: column;
+}
+
+.app .right-side .Facture .Titre div {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.app .right-side .Facture .Titre span {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+
+}
+
+.app .right-side .Facture .Titre div {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    align-items: center;
+}
+
+.app .right-side .Facture .Titre div span {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    margin: 0;
+}
+
+.app .right-side .Facture .deux {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+}
+
+.app .right-side .Facture .deux span {
+    font-family: 'IBM Plex Sans';
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.app .right-side .Facture .deux p {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    margin: 0;
+}
+
+
+
+.app .right-side .all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.app .right-side .all span {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #4F43F7;
+}

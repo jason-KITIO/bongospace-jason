@@ -1,0 +1,17 @@
+.page .soustitre-texte {
+    font-weight: 400;
+    font-size: 14px;
+    color: #11111156;
+}
+
+.page .Rectangle4 {
+    border-radius: 30px;
+    border: 5px dashed #11111156;
+}
+/* 
+.page .Rectangle4:hover {
+    display: block;
+    background-color: #EDECFE70;
+    border: 5px solid #EDECFE;
+    border-radius: 30px;
+} */

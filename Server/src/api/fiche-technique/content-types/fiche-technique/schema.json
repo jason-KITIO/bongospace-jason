@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fiche_techniques",
+  "info": {
+    "singularName": "fiche-technique",
+    "pluralName": "fiche-techniques",
+    "displayName": "Fiche_technique",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "poids": {
+      "type": "float"
+    },
+    "Dimensions": {
+      "type": "string"
+    },
+    "Capacite": {
+      "type": "string"
+    },
+    "Autonomie": {
+      "type": "string"
+    },
+    "Vitesse": {
+      "type": "string"
+    },
+    "Resolution": {
+      "type": "string"
+    },
+    "Temps_preparation": {
+      "type": "string"
+    },
+    "Temps_cuisson": {
+      "type": "string"
+    },
+    "Couleur": {
+      "type": "string"
+    },
+    "taille": {
+      "type": "decimal"
+    },
+    "Materiel": {
+      "type": "string"
+    },
+    "Garantie": {
+      "type": "string"
+    },
+    "produits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produit.produit"
+    },
+    "ingrediants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ingrediant.ingrediant"
+    }
+  }
+}

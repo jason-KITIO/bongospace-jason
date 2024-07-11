@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marques",
+  "info": {
+    "singularName": "marque",
+    "pluralName": "marques",
+    "displayName": "Marque",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "produits": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::produit.produit"
+    }
+  }
+}

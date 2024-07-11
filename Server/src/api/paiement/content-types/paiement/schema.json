@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paiements",
+  "info": {
+    "singularName": "paiement",
+    "pluralName": "paiements",
+    "displayName": "Paiement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date"
+    },
+    "Montant": {
+      "type": "float"
+    },
+    "Mode": {
+      "type": "string"
+    },
+    "commande": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commande.commande",
+      "inversedBy": "paiement"
+    }
+  }
+}

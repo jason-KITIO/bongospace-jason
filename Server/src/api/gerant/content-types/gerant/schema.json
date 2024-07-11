@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gerants",
+  "info": {
+    "singularName": "gerant",
+    "pluralName": "gerants",
+    "displayName": "Gerant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "component",
+      "repeatable": true,
+      "component": "users.users"
+    }
+  }
+}

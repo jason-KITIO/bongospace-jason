@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "depenses",
+  "info": {
+    "singularName": "depense",
+    "pluralName": "depenses",
+    "displayName": "Depense"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Montant": {
+      "default": 0,
+      "type": "float"
+    }
+  }
+}

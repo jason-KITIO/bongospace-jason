@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_users_users",
+  "info": {
+    "displayName": "Users",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "Password": {
+      "type": "password"
+    }
+  }
+}
