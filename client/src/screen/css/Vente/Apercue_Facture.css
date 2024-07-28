@@ -1,0 +1,39 @@
+.apercue-facture {
+    border-radius: 20px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 20px 0px #00000040;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.apercue-facture-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.apercue-facture-top .id-entreprise{
+    display: flex;flex-direction: column;justify-content: end;
+}
+
+.apercue-facture-top .id-entreprise span{
+    text-align: end;
+}
+
+.apercue-facture-milieu .new-Facture-droite{
+    border: none;
+}
+.apercue-facture-milieu .new-Facture-droite .nom{
+    font-weight: 700;
+}
+
+.new-Facture-droite .gauche-solde{
+    width: 60%;
+}
+.new-Facture-droite .gauche-solde div .p-titre{
+    text-align: start !important;
+}

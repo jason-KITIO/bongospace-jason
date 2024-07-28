@@ -1,0 +1,144 @@
+.List_vente {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #1111110A;
+    padding: 20px 0;
+    border-radius: 24px;
+}
+
+.List_vente p {
+    font-family: Bricolage Grotesque;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.List_vente .titre {
+    padding: 0 14px;
+}
+
+.List-vente-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #FFFFFF;
+    padding: 12px;
+    border-radius: 16px;
+    /* gap: 10px; */
+}
+
+
+.List-vente-block-un {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.List-vente-block-un img {
+    width: 48px;
+    height: 48px;
+}
+
+.List-vente-block-un div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.List-vente-block-un p {
+    font-size: 16px;
+}
+
+.List-vente-block-un span {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111A3;
+}
+
+.List-vente-block-deux {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.List-vente-block-deux div {
+    display: flex;
+    flex-direction: row;
+}
+
+.List-vente-block-deux p {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.List-vente-block-deux span {
+    font-family: IBM Plex Sans;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12.1px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #11111152;
+}
+
+.List-vente-block-deux .Fcfa {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.List-vente-block-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(1) {
+    width: 90%;
+    box-shadow: 0px 4px 4px 0px #0000001C;
+    position: relative;
+    z-index: 3;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(2) {
+    width: 85%;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    position: relative;
+    z-index: 2;
+    bottom: 35px;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(3) {
+    width: 80%;
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(1) .List-vente-block-un p {
+    font-size: 14px;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(2) .List-vente-block-un p {
+    font-size: 12px;
+}
+
+.List-vente-block-liste .List-vente-block:nth-child(3) .List-vente-block-un p {
+    font-size: 11px;
+}

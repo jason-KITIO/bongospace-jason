@@ -1,0 +1,259 @@
+.new-facture div p {
+    font-size: 14px;
+    color: #111111;
+}
+
+.new-facture div {
+    width: 25%;
+    align-items: center;
+}
+
+.new-facture div:nth-last-child(1) {
+    align-items: flex-end;
+}
+
+.new-facture div:nth-child(1) {
+    align-items: flex-start;
+}
+
+.new-facture-element {
+    opacity: 70%;
+}
+
+.new-facture-element div p {
+    font-size: 14px;
+    color: #11111172;
+}
+
+.new-facture-element div {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-facture-element div:nth-last-child(1) {
+    justify-content: flex-end;
+}
+
+.new-facture-element div:nth-child(1) {
+    justify-content: flex-start;
+}
+
+.new-facture-element div img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.new-facture-element div img:hover {
+    opacity: 50%;
+}
+
+input[type="date" i] {
+    padding: 16px !important;
+}
+
+.new-Facture-droite {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 3px dashed #11111110;
+    align-items: start;
+    height: fit-content;
+    border-radius: 20px;
+}
+
+.new-Facture-nom {
+    align-items: flex-start;
+}
+
+.new-Facture-droite span {
+    text-align: start;
+}
+
+.new-Facture-droite .nom {
+    font-size: 16px !important;
+}
+
+.new-facture-titre {
+    margin-bottom: 20px;
+}
+
+.new-facture-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.new-facture-select div {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.new-facture-select div p {
+    color: #24BD3D;
+    font-family: 'IBM Plex Sans';
+}
+
+.save {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gauche-solde .prix {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    gap: 0 !important;
+}
+
+.gauche-solde .prix span {
+    font-family: 'IBM Plex Sans';
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.gauche-solde .prix p {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #1111118F;
+    margin: 0;
+}
+
+.solde {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.solde .gauche-solde {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solde .gauche-solde div {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.solde .gauche-solde div .p-titre {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: end;
+    width: 100%;
+}
+
+
+.solde .gauche-solde div input {
+    padding: 16px;
+    border: 1px solid #11111130;
+    border-radius: 16px;
+    width: 100%;
+}
+
+
+.page-new-facture {
+    /* width: 25%;
+    display: flex;
+    flex-direction: column; */
+
+    position: sticky;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+
+.page-new-facture::-webkit-scrollbar {
+    display: none;
+}
+
+
+.page-new-facture {
+    scrollbar-width: none;
+}
+
+.gauche-client-new-facture {
+    height: fit-content !important;
+}
+
+.new-Facture-droite-vide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px dashed #11111110;
+
+    padding: 50px 15px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.new-Facture-droite-vide p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-header {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    min-width: 186px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 12px 8px;
+    display: block;
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    text-align: start;
+}
+
+.dropdown-item:hover {
+    border-radius: 5px;
+    background-color: #00000014;
+}
+
+.dropdown-active{
+    display: none;
+}

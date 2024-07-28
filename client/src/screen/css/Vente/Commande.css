@@ -1,0 +1,128 @@
+.page .col-6 thead div {
+    width: 15% !important;
+}
+
+
+/* .commande div:nth-last-child(1) {
+    align-items: flex-start !important;
+} */
+
+.activite .header span {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111;
+}
+
+.activite .header p {
+    font-size: 14px;
+}
+
+.corps-header-div input[type="date" i] {
+    padding: 0 !important;
+}
+
+.custom-datepicker {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.react-datepicker {
+    background-color: #fff;
+    /* Couleur de fond du calendrier */
+    border: 1px solid #ccc;
+    /* Bordure du calendrier */
+}
+
+.react-datepicker__day--selected {
+    background-color: #007bff;
+    /* Couleur de fond pour le jour sélectionné */
+    color: rgb(0, 0, 0);
+    /* Couleur du texte pour le jour sélectionné */
+}
+
+.react-datepicker__day:hover {
+    background-color: #e9ecef;
+    /* Couleur de fond au survol */
+}
+
+.Block-statut1 {
+    padding: 0 !important;
+    width: 25%;
+    margin-right: 1% !important;
+    width: 95%;
+}
+
+.statut1 {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 10px !important;
+    width: 95% !important;
+    margin: 0 1%;
+}
+
+.en-cours {
+    background: #FFE8CC;
+}
+
+.en-cours p {
+    color: #FF8C00;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.annule-statut {
+    background: #FAD4D8;
+}
+
+.annule-statut p {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #B62230;
+}
+
+.En-attente {
+    border: 1px solid #B9B4FC;
+    background: #DCD9FD;
+}
+
+.En-attente p {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #3E00FF;
+}
+
+.livre {
+    background: #D3F2D8;
+}
+
+.livre p {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #24BD3D;
+}

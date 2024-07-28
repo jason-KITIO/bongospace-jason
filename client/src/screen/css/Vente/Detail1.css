@@ -1,0 +1,14 @@
+.detail-facture-haut .corps .client div span {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.statut{
+    background-color: #EDECFE;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 10px;
+}
+.detail-list-produit{
+    height: fit-content;
+}

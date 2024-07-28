@@ -15,7 +15,7 @@
     "Nom": {
       "type": "string"
     },
-    "Prix": {
+    "Prix_vente": {
       "type": "float"
     },
     "Disponibilite": {
@@ -57,6 +57,9 @@
       "relation": "manyToOne",
       "target": "api::categorie.categorie",
       "inversedBy": "produits"
+    },
+    "Prix_achat": {
+      "type": "integer"
     }
   }
 }

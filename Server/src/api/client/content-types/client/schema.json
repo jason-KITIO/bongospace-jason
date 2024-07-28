@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "User": {
-      "type": "component",
-      "repeatable": true,
-      "component": "users.users"
-    },
     "Telephone": {
       "type": "string"
     },
@@ -24,6 +19,24 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::commande.commande"
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Ville": {
+      "type": "string"
+    },
+    "Quartier": {
+      "type": "string"
+    },
+    "factures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::facture.facture",
+      "mappedBy": "client"
     }
   }
 }

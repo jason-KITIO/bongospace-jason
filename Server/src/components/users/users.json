@@ -12,8 +12,8 @@
     },
     "Email": {
       "type": "email",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "Password": {
       "type": "password"

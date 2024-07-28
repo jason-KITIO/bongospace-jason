@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "factures",
+  "info": {
+    "singularName": "facture",
+    "pluralName": "factures",
+    "displayName": "Facture",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Numero": {
+      "type": "string"
+    },
+    "echeance": {
+      "type": "date"
+    },
+    "Montant": {
+      "type": "decimal"
+    },
+    "commandes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::commande.commande"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::client.client",
+      "inversedBy": "factures"
+    },
+    "Statut": {
+      "type": "enumeration",
+      "enum": [
+        "Paye",
+        "Non paye",
+        "Brouillon"
+      ]
+    }
+  }
+}

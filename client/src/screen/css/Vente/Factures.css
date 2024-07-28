@@ -1,0 +1,33 @@
+.page-facture {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nb-facture {
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nb-facture .b p {
+    font-size: 30px;
+}
+
+.nb-facture .b span {
+    font-size: 20px;
+}
+
+.actif-facture-titre {
+    padding: 10px 30px;
+    border-bottom: 1px solid #111111;
+    width: fit-content;
+    color: #111111 !important;
+    font-size: 18px !important;
+}
+
+.facture-table {
+    font-size: 16px !important;
+    padding: 10px 30px;
+    cursor: pointer;
+}

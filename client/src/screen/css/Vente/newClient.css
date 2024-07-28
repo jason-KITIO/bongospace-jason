@@ -1,0 +1,46 @@
+.droite-client {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    text-align: end;
+}
+
+.droite-client p {
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+    margin: 0;
+}
+
+.droite-client span {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.2px;
+    color: #11111152;
+    margin-bottom: 12px;
+    width: 200px;
+}
+
+.page .titre {
+    padding: 20px 0;
+}
+
+.nom-client {
+    flex-wrap: wrap;
+}
+
+.nom-client .un{
+    width: 48% !important;
+}
+.gauche-client{
+    height: 55vh !important ;
+}
+.page-client{
+    justify-content: center;
+}

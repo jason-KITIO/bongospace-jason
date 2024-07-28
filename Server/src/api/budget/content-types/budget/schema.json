@@ -4,7 +4,8 @@
   "info": {
     "singularName": "budget",
     "pluralName": "budgets",
-    "displayName": "Budget"
+    "displayName": "Budget",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

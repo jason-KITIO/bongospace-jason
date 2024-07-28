@@ -794,6 +794,7 @@ export interface ApiBudgetBudget extends Schema.CollectionType {
     singularName: 'budget';
     pluralName: 'budgets';
     displayName: 'Budget';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -867,12 +868,20 @@ export interface ApiClientClient extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    User: Attribute.Component<'users.users', true>;
     Telephone: Attribute.String;
     commandes: Attribute.Relation<
       'api::client.client',
       'oneToMany',
       'api::commande.commande'
+    >;
+    Nom: Attribute.String;
+    Email: Attribute.Email;
+    Ville: Attribute.String;
+    Quartier: Attribute.String;
+    factures: Attribute.Relation<
+      'api::client.client',
+      'oneToMany',
+      'api::facture.facture'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -898,6 +907,7 @@ export interface ApiCommandeCommande extends Schema.CollectionType {
     singularName: 'commande';
     pluralName: 'commandes';
     displayName: 'Commande';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -906,11 +916,13 @@ export interface ApiCommandeCommande extends Schema.CollectionType {
     Numero: Attribute.Integer;
     Date: Attribute.Date;
     Montant: Attribute.Float;
-    Statut: Attribute.String;
     paiement: Attribute.Relation<
       'api::commande.commande',
       'oneToOne',
       'api::paiement.paiement'
+    >;
+    Statut: Attribute.Enumeration<
+      ['Livre', 'Livraison en cours', 'Commande annule', 'Payement en attente']
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1061,6 +1073,50 @@ export interface ApiEntrepriseEntreprise extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::entreprise.entreprise',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFactureFacture extends Schema.CollectionType {
+  collectionName: 'factures';
+  info: {
+    singularName: 'facture';
+    pluralName: 'factures';
+    displayName: 'Facture';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Numero: Attribute.String;
+    echeance: Attribute.Date;
+    Montant: Attribute.Decimal;
+    commandes: Attribute.Relation<
+      'api::facture.facture',
+      'oneToMany',
+      'api::commande.commande'
+    >;
+    client: Attribute.Relation<
+      'api::facture.facture',
+      'manyToOne',
+      'api::client.client'
+    >;
+    Statut: Attribute.Enumeration<['Paye', 'Non paye', 'Brouillon']>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::facture.facture',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::facture.facture',
       'oneToOne',
       'admin::user'
     > &
@@ -1302,7 +1358,7 @@ export interface ApiProduitProduit extends Schema.CollectionType {
   };
   attributes: {
     Nom: Attribute.String;
-    Prix: Attribute.Float;
+    Prix_vente: Attribute.Float;
     Disponibilite: Attribute.String;
     Images: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     Qte_stock: Attribute.Integer;
@@ -1320,6 +1376,7 @@ export interface ApiProduitProduit extends Schema.CollectionType {
       'manyToOne',
       'api::categorie.categorie'
     >;
+    Prix_achat: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1495,6 +1552,7 @@ declare module '@strapi/types' {
       'api::depense.depense': ApiDepenseDepense;
       'api::employer.employer': ApiEmployerEmployer;
       'api::entreprise.entreprise': ApiEntrepriseEntreprise;
+      'api::facture.facture': ApiFactureFacture;
       'api::fiche-technique.fiche-technique': ApiFicheTechniqueFicheTechnique;
       'api::fournisseur.fournisseur': ApiFournisseurFournisseur;
       'api::gerant.gerant': ApiGerantGerant;

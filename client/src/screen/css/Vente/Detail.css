@@ -1,0 +1,145 @@
+.sous-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sous-header .a,
+.sous-header .b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: IBM Plex Mono;
+}
+
+.sous-header .a1 {
+    width: 80px;
+    height: 80px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    border: 1px solid #11111180;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sous-header .a1 span {
+    font-family: IBM Plex Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 30.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.sous-header .a2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sous-header .a2 span {
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #111111;
+}
+
+.sous-header .b .b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sous-header .b p {
+    font-family: IBM Plex sans;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: #111111;
+}
+
+.sous-header .b .b1 hr {
+    width: 70%;
+    border: 0px solid transparent !important;
+    height: 0.01rem !important;
+    background-color: #11111180;
+}
+
+.sous-header .b span {
+    font-family: IBM Plex mono;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #11111180;
+}
+
+.page-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details .a {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.details .a span {
+    color: #11111172;
+}
+
+.details hr {
+    height: 70%;
+}
+
+
+.details .b {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #11111172;
+    padding: 20px;
+    gap: 20px;
+    width: 80%;
+
+}
+
+.details .b span {
+    padding: 10px 30px;
+    border-bottom: 1px solid #111111;
+    width: fit-content;
+}
+
+.details .b .details-facture-haut {
+    background-color: #EDECFE;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.details .b .details-facture-haut .details-facture-haut-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: end;
+}
+.details .b .details-facture-haut .details-facture-haut-div span{
+    color: #11111172;
+    border: none;
+    text-align: right;
+    padding: 0;
+}

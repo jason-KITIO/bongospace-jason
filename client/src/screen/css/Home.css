@@ -11,7 +11,7 @@
 .app {
     background-color: #111111;
     min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -33,10 +33,19 @@
     background-color: #fff;
     margin: -16px 0 0 -16px;
     border-radius: 32px 0 0 0;
+
+    position: sticky;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+
+.page::-webkit-scrollbar {
+    display: none;
 }
 
 .page-content {
-    grid-area: 2 / 4 / 3 / 10;
+    grid-area: 1 / 1 / 1 / 10;
     padding: 14px;
 
     position: sticky;
@@ -47,10 +56,23 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 32px 0 0 32px;
 }
 
 .right-side {
-    grid-area: 2 / 10 / 3 / 13;
+    grid-area: 1 / 10 / 3 / 13;
+    margin: 16px 16px 0 0;
+}
+
+
+.right-side {
+    height: 100%;
+    scrollbar-width: none;
+}
+
+
+.right-side::-webkit-scrollbar {
+    display: none;
 }
 
 .app ::-webkit-scrollbar {
@@ -95,6 +117,20 @@
 
 .page-content .autre {
     scrollbar-width: none;
+
+}
+
+.Home_Container {
+    grid-area: 2 / 4 / 3 / 13;
+    background-color: #fff;
+    margin: -16px 0 0 -16px;
+    border-radius: 32px 0 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 96px 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
 }
 
 .logo {
@@ -102,6 +138,7 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 32px;
+    gap: 10px;
 }
 
 .logo-text {
@@ -174,20 +211,20 @@
     line-height: 13.2px;
     text-align: left;
     color: #11111152;
-    margin-bottom: 12px;
+    margin: 12px 0;
 }
 
 .corps .bloc1 {
     display: flex;
     flex-direction: column;
-    /* gap: 4px; */
+    gap: 10px;
 }
 
 .corps .bloc1 .menu div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 7px;
+    padding: 4px;
     gap: 10px;
     justify-content: space-between;
 }
@@ -198,7 +235,7 @@
     cursor: pointer;
 }
 
-.corps .bloc1 .menu p:hover{
+.corps .bloc1 .menu p:hover {
     font-weight: 700;
 }
 
@@ -224,24 +261,27 @@
     align-items: flex-start !important;
     margin-left: 40px;
 }
-.visible .Link-style{
+
+.visible p {
     font-family: IBM Plex Sans;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14x !important;
+    font-weight: 400 !important;
     line-height: 17.6px;
     letter-spacing: -0.02em;
     text-align: left;
-    color: #111111B8;
+    color: #111111B8 !important;
     margin: 0;
     text-decoration: none;
 }
-.visible .Link-style:hover{
-    font-weight: 700;
+
+.visible p:hover {
+    font-weight: 700 !important;
 }
 
 .corps .bloc1 .Actif {
     background: #11111114;
     border-radius: 12px;
+    padding: 7px;
 }
 
 .corps .bloc1 .Actif p {
@@ -1146,9 +1186,9 @@ hr {
 
 .app .right-side {
     /* width: 35%; */
-    background: #1111110A;
-    padding: 20px 24px;
-    border-radius: 24px;
+    /* background: #1111110A; */
+    /* padding: 20px 24px; */
+    /* border-radius: 24px; */
     display: flex;
     flex-direction: column;
     /* margin-left: 10px; */

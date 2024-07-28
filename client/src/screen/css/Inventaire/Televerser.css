@@ -4,14 +4,37 @@
     color: #11111156;
 }
 
-.page .Rectangle4 {
+.Rectangle4 {
     border-radius: 30px;
     border: 5px dashed #11111156;
+    width: 100%;
+    cursor: pointer;
+    height: 400px;
+    align-content: center;
+    text-align: center;
 }
-/* 
-.page .Rectangle4:hover {
-    display: block;
-    background-color: #EDECFE70;
-    border: 5px solid #EDECFE;
-    border-radius: 30px;
-} */
+
+.Rectangle4 img {
+    width: 100%;
+}
+
+.Rectangle4 p {
+    height: 100%;
+    align-content: center;
+    font-size: 30px;
+    color: #24BD3D;
+    background-color: #D3F2D8;
+    border-radius: 25px;
+}
+
+.block1{    
+    display: flex;
+    flex-direction: row !important;
+    width: 70% !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+}
+
+.list-produit-televerser{
+    height: 60vh !important;
+}

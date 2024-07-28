@@ -1,0 +1,19 @@
+.client {
+    justify-content: space-between !important;
+}
+
+.client div {
+    width: 25%;
+}
+
+.client div:nth-last-child(1) {
+    /* align-items: center; */
+}
+
+/* .page .corps tbody div {
+    width: 20% !important;
+} */
+
+.page .col-5 thead div {
+    width: 19% !important;
+}
