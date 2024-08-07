@@ -1,0 +1,324 @@
+.container {
+    background-color: #121212;
+    height: 100vh;
+    width: 100vw;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+}
+
+.Page-container {
+    grid-area: 1 / 1 / 2 / 6;
+    background: #0000004D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+
+    position: sticky;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.Page-container::-webkit-scrollbar {
+    display: none;
+}
+
+.Page-image {
+    grid-area: 1 / 6 / 2 / 13;
+    /* background-image: url('../../images/png/Frame\ 22.png'); */
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.Ellipse-block {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+}
+
+.Ellipse {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 161px;
+    top: -12px;
+    background: rgba(255, 255, 255, 0.85);
+    filter: blur(100px);
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.login-text-titre {
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.login-text-sous-titre {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF7A;
+}
+
+.login-text-sous-titre-span {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.Page-image {
+    position: relative;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination-button.active {
+    background-color: #0056b3;
+    /* Couleur pour le bouton actif */
+}
+
+.login-input {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border: 1px solid #FFFFFF26;
+    border-radius: 14px;
+    gap: 16px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.label {
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    top: 130px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input {
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 7px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:focus {
+    border: 2px solid transparent;
+    color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.input:valid~.label,
+.input:focus~.label {
+    transition: 0.3s;
+    padding-left: 2px;
+    transform: translateY(-35px);
+}
+
+.input:valid,
+.input:focus {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+}
+
+.Suivant {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 12px 14px;
+    gap: 16px;
+
+    color: #fff;
+    background: #3E00FF;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.Suivant:hover{
+    cursor: auto;
+    color: rgba(255, 255, 255, 0.48);
+}
+.Autre_methode {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 17px;
+}
+
+.Autre_methode_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    padding: 10px 30px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+}
+
+.Autre_methode_img:hover,
+.profil:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.Login-haut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-text-petit {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.login-text-petit-actif {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.login-text-petit:hover,
+.login-text-petit-actif:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.login-text-petit-more:hover {
+    cursor: auto;
+    color: rgba(255, 255, 255, 0.48);
+}
+
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    border-radius: 40px;
+    background-color: #FFFFFF0A;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.profil img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.profil-nom {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.block-service {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
+.profil-service {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.profil-activite {
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.Login-bas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.Login-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px 30px 30px;
+}

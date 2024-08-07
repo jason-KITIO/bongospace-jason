@@ -20,6 +20,8 @@ import NewFacture_1 from './screen/JS/Vente/facture/newFacture_1';
 import Apercue_Facture from './screen/JS/Vente/facture/Apercue_Facture';
 import AddCommande from './screen/JS/Vente/commande/addCommande';
 import EditCommande from './screen/JS/Vente/commande/editCommande';
+import Login from './screen/JS/login/login'
+import Register from './screen/JS/login/register'
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
@@ -29,7 +31,9 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/Inventaire" element={<Inventaire />} />
         <Route path="/Inventaire/Ajouter" element={<Ajouter />} />
         <Route path="/Inventaire/Televerser" element={<Televerser />} />

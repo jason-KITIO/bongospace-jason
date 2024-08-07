@@ -1,0 +1,60 @@
+.input-container {
+    position: relative;
+    width: 100%;
+    /* margin: 20px 0; */
+}
+
+.input-container input {
+    background-color: transparent;
+    color: #FFFFFFA3;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    /* Espace pour le label */
+    padding-right: 40px;
+    /* Espace pour l'icône */
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.floating-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s ease all;
+    color: #FFFFFFA3;
+    font-size: 16px;
+}
+
+.input-container.focused .floating-label {
+    top: -10px;
+    /* Déplace le label vers le haut */
+    left: 10px;
+    font-size: 12px;
+    /* Réduit la taille du label */
+    color: #FFFFFF7A;
+    /* Change la couleur du label */
+}
+
+
+
+
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+}
+
+.password-toggle:hover {
+    color: #FFFFFF7A;
+    /* Couleur au survol */
+}

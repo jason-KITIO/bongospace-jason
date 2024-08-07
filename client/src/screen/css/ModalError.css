@@ -1,0 +1,46 @@
+.modal-backdrop {
+    backdrop-filter: blur(8px); /* Applique un flou plus prononcé à l'arrière-plan */
+}
+
+.modal-content {
+    border-radius: 12px; /* Coins arrondis pour le modal */
+    border: none; /* Supprime la bordure par défaut */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre autour du modal */
+    transition: transform 0.3s ease; /* Transition pour l'animation */
+}
+
+.modal-header {
+    border-bottom: none; /* Supprime la bordure inférieure du header */
+    background-color: #f8d7da; /* Couleur de fond pour le header */
+    color: #721c24; /* Couleur du texte pour le header */
+}
+
+.modal-body {
+    font-size: 16px; /* Taille de police pour le corps */
+    color: #333; /* Couleur du texte */
+}
+
+.modal-footer {
+    border-top: none; /* Supprime la bordure supérieure du footer */
+    justify-content: center; /* Centre le contenu du footer */
+}
+
+.modal {
+    display: flex !important; /* Assurez-vous que le modal est centré */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.modal.show {
+    transform: scale(1.05); /* Légère augmentation de la taille lors de l'ouverture */
+}
+
+.modal.fade {
+    opacity: 0; /* Initialement transparent */
+    transition: opacity 0.15s linear; /* Transition pour l'opacité */
+}
+
+.modal.show {
+    opacity: 1; /* Opacité pleine lorsque le modal est visible */
+}

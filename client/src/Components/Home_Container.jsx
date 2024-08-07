@@ -66,7 +66,7 @@ const Home_Container = () => {
     return (
         <div className='Home_Container'>
             <div className='page-content'>
-                
+
                 <div className='haut'>
                     <span>Aujourd'hui</span>
                     <div className='block'>

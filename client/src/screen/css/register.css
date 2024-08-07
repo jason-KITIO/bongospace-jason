@@ -1,0 +1,128 @@
+.container {
+    background-color: #121212;
+    height: 100vh;
+    width: 100vw;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+}
+
+.Page-container-register {
+    grid-area: 1 / 8 / 2 / 13;
+    background: #0000004D;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+
+    position: sticky;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.Page-container-register::-webkit-scrollbar {
+    display: none;
+}
+
+.Page-image-register {
+    grid-area: 1 / 1 / 2 / 8;
+    /* background-image: url('../../images/png/Frame\ 22.png'); */
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.Ellipse-block {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+}
+
+.Ellipse {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 161px;
+    top: -12px;
+    background: rgba(255, 255, 255, 0.85);
+    filter: blur(100px);
+}
+
+.login-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.login-text-titre {
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.login-text-sous-titre {
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF7A;
+}
+
+.login-text-sous-titre-span {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Page-image-register {
+    position: relative;
+}
+
+.list-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Suivant1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    gap: 16px;
+
+    color: #fff;
+    background: #3E00FF;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    height: 70px;
+}
+
+.Suivant1:hover {
+    cursor: auto;
+    color: rgba(255, 255, 255, 0.48);
+}
